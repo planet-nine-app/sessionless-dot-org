@@ -1,0 +1,22 @@
+*, *::after, *::before, html {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+}
+.row {
+    display: flex;
+    padding: 0 1rem 0 1rem;
+}
+
+.btwn {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
