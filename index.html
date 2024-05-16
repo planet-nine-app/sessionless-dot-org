@@ -7,62 +7,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <script src="index.js" defer></script>
     <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="row btwn">
 <div class="row">
-    <img src="#" alt="something here" srcset="">
-    <div class="col">
-        <h2>Sessionless</h2>
-        <h4> Make authentication handling easier</h4>
+    <img class="logo-img" src="assets/sessionless.png" alt="Sessionless logo which is two circles connected by a line">
+
+    <div class="col align-center">
+        <h2 class="logo-text">Sessionless</h2>
+        <h4 class="logo-subtext"> Make authentication handling easier</h4>
     </div>
 </div>
-<div class="row">
+<div class="row btn g-8 mr-5" id="btn1">
+    <img src="/assets/sparkles.png" id="black-sparkles" class="visible" alt="Sparkles">
+    <img src="/assets/w-sparkles.png" id="white-sparkles" class="hidden" alt="Sparkles">
     Demo
 </div>
 </header>
 <main class="row">
     <div class="img-container">
-        img here
+            <img src="assets/HeroImage.png" alt="Art work">
     </div>
     <div class="content-container">
-        <div class="col">
-            <h1>Bucket list</h1>
-            <p>Do people even write bucket lists? If you are like us, you don’t. Just like you also don’t care for creating tedious onboarding processes, registration forms or password recoveries.</p>
-            <h4>Dare to refuse:</h4>
+        <div class="col padding-container ">
+            <h1 class="heroHead">Bucket list</h1>
+            <p class="heroText">Do people even write bucket lists? If you are like us, you don’t. Just like you also don’t care for creating tedious onboarding processes, registration forms or password recoveries.</p>
+            <h4 class="listHead gap-y-5">Dare to refuse:</h4>
             <ul>
                 <li>Registration forms</li>
                 <li>Password managers</li>
                 <li>Password recoveries</li>
                 <li>CAPTCHA or similar authenticators</li>
             </ul>
-            <div class="row">
-                <a href="" class="row"> 
-                    <img src="#" alt="">
-                    Get resources </a>                 
+             
 
-                    <a href="" class="row"> 
-                        <img src="#" alt="">
+                    <a href="" class="gap-y-5 g-8 m-3 w-25 row btn" id="btn2"> 
+                        <img src="assets/w-book-open.png" class="hidden" id="w-open-book" alt="Icon of an open book">
+                        <img src="assets/book-open.png" class="visible" id="b-open-book" alt="Icon of an open book">
                         Learn more </a> 
+        </div>
 
-                        <a href="" class="row"> 
-                            <img src="#" alt="">
-                            I love forms </a> 
+        <div class="language-container">
+            <div class="col padding-container ">
+                <h3 class="mainHead">Supported languages</h3>
+                <div class="row heroText">
+                    stuff here
+                </div>
             </div>
         </div>
 
-        <div class="col">
-            <h3>Supported languages</h3>
-            <div class="row">
-                stuff here
-            </div>
-        </div>
-
-        <div class="col">
-            <h3>Demo</h3>
-            <p>Need convincing? Check out this short demo and we will walk you through it step by step.</p>
+        <div class="col padding-container ">
+            <h3 class="mainHead">Demo</h3>
+            <p class="heroText">Need convincing? Check out this short demo and we will walk you through it step by step.</p>
         </div>
     </div>
 </main>
