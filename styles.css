@@ -233,4 +233,8 @@ header {
         width: 25rem;
         margin-left: .5rem;
     }
+
+    .wrap {
+        margin-left: 1rem;
+    }
 }
