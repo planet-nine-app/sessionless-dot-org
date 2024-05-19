@@ -6,14 +6,13 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />      
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
     <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
 </head>
 <body>
-<header class="nav-row btwn">
-<div class="nav-row">
+<header class="row btwn">
+<div class="row">
     <img class="logo-img" src="assets/sessionless.png" alt="Sessionless logo which is two circles connected by a line">
 
     <div class="col align-center">
@@ -21,50 +20,84 @@
         <h4 class="logo-subtext"> Make authentication handling easier</h4>
     </div>
 </div>
-<a href="https://www.planetnineapp.com/sessionless-demo-1" class="nav-row btn btn-big g-8 mr-5" id="btn1">
+<div class="row btn g-8 mr-5" id="btn1">
     <img src="/assets/sparkles.png" id="black-sparkles" class="visible" alt="Sparkles">
     <img src="/assets/w-sparkles.png" id="white-sparkles" class="hidden" alt="Sparkles">
     Demo
-</a>
+</div>
 </header>
-<main class="">
-    <section class="hero-container row padding-container">
-        <div class="heroText-container">
-            <h1 class="heroHead">
-                Sessionless: Because emails and passwords should've gone in the 90s
-            </h1>
-            <p class="heroText">Sessionless is an attempt to make authentication handling easier for developers and users, while also enabling interesting behavior not possible with traditional sessions. No emails, no passwords, and no sessions, just establish auth and get going.</p>
-            <div class="btn-container">
-                    <a href="https://www.planetnineapp.com/sessionless-demo-1" class="nav-row btn btn-small g-8" id="btn3">
-                        <img src="/assets/sparkles.png" id="black-sparkles2" class="visible" alt="Sparkles">
-                        <img src="/assets/w-sparkles.png" id="white-sparkles2" class="hidden" alt="Sparkles">
-                        Demo
-                    </a>
+<main class="row">
+    <div class="img-container">
+            <img src="assets/HeroImage.png" class="img-hero" alt="Art work">
+    </div>
+    <div class="content-container">
+        <div class="col padding-container ">
+            <h1 class="heroHead">Bucket list</h1>
+            <p class="heroText">Do people even write bucket lists? If you are like us, you don’t. Just like you also don’t care for creating tedious onboarding processes, registration forms or password recoveries.</p>
+            <h4 class="listHead gap-y-5">Dare to refuse:</h4>
+            <ul>
+                <li>Registration forms</li>
+                <li>Password managers</li>
+                <li>Password recoveries</li>
+                <li>CAPTCHA or similar authenticators</li>
+            </ul>
+             
+
+                    <a href="" class="gap-y-5 g-8 m-3 w-25 row btn" id="btn2"> 
+                        <img src="assets/w-book-open.png" class="hidden" id="w-open-book" alt="Icon of an open book">
+                        <img src="assets/book-open.png" class="visible" id="b-open-book" alt="Icon of an open book">
+                        Learn more </a> 
+        </div>
+
+        <div class="language-container">
+            <div class="col padding-container ">
+                <h3 class="mainHead">Supported languages</h3>
+                <div class="row heroText">
+                    stuff here
+                </div>
             </div>
         </div>
-        <img src="/assets/camera.png" alt="Person staring at a camera lens" class="hero-img">
 
-    </section>
-    <section class="language-container">
-        <div class="col g-y-5 padding-container ">
-            <h3 class="mainHead">Supported languages</h3>
-            <div class="wrap">
-                <i class="devicon-csharp-plain icon"></i>
-                <i class="devicon-java-plain icon"></i>
-                <i class="devicon-javascript-plain icon"></i>
-                <i class="devicon-kotlin-plain icon"></i>
-                <i class="devicon-swift-plain icon"></i>
-                <i class="devicon-python-plain icon"></i>
-                <i class="devicon-rust-original icon"></i>
-            </div>
-            <a href="https://github.com/planet-nine-app/sessionless/blob/main/README.md" class="g-8 m-3 nav-row btn btn-white" id="btn2"> 
-                <img src="assets/w-book-open.png" class="visible" id="b-open-book" alt="Icon of an open book">
-                <img src="assets/book-open.png" class="hidden" id="w-open-book" alt="Icon of an open book">
-               <p> Learn more</p> </a> 
+        <div class="col padding-container ">
+            <h3 class="mainHead">Demo</h3>
+            <p class="heroText">Need convincing? Check out this short demo and we will walk you through it step by step.</p>
+        </div>
+
+        <div class="col padding-container ">
+            <h1 class="heroHead">Bucket list</h1>
+            <p class="heroText">Do people even write bucket lists? If you are like us, you don’t. Just like you also don’t care for creating tedious onboarding processes, registration forms or password recoveries.</p>
+            <h4 class="listHead gap-y-5">Dare to refuse:</h4>
+            <ul>
+                <li>Registration forms</li>
+                <li>Password managers</li>
+                <li>Password recoveries</li>
+                <li>CAPTCHA or similar authenticators</li>
+            </ul>
+             
+
+                    <a href="" class="gap-y-5 g-8 m-3 w-25 row btn" id="btn2"> 
+                        <img src="assets/w-book-open.png" class="hidden" id="w-open-book" alt="Icon of an open book">
+                        <img src="assets/book-open.png" class="visible" id="b-open-book" alt="Icon of an open book">
+                        Learn more </a> 
+        </div>
+        <div class="col padding-container ">
+            <h1 class="heroHead">Bucket list</h1>
+            <p class="heroText">Do people even write bucket lists? If you are like us, you don’t. Just like you also don’t care for creating tedious onboarding processes, registration forms or password recoveries.</p>
+            <h4 class="listHead gap-y-5">Dare to refuse:</h4>
+            <ul>
+                <li>Registration forms</li>
+                <li>Password managers</li>
+                <li>Password recoveries</li>
+                <li>CAPTCHA or similar authenticators</li>
+            </ul>
+             
+
+                    <a href="" class="gap-y-5 g-8 m-3 w-25 row btn" id="btn2"> 
+                        <img src="assets/w-book-open.png" class="hidden" id="w-open-book" alt="Icon of an open book">
+                        <img src="assets/book-open.png" class="visible" id="b-open-book" alt="Icon of an open book">
+                        Learn more </a> 
         </div>
     </div>
-</section>
-
 </main>
 </body>
 </html>

@@ -63,14 +63,24 @@ body {
     flex-direction: column;
 }
 .content-container {
+    border: 6px solid #58337B;
+    overflow-y: auto; 
+    height: 100vh;
 }
 
 .padding-container {
     padding: 1rem 5rem 0rem 5rem;
 }
+.img-hero {
+    height: 98.3vh;
+}
 
 .img-container {
     background-size: cover;
+    border-top: 6px solid #58337B;
+    width: max-content;
+    border-left: 6px solid #58337B;
+    border-bottom: 6px solid #58337B;
     height: 100vh;
 }
 .logo-img {
@@ -122,12 +132,11 @@ li {
 .language-container {
     display: flex;
     text-align: center;
-    background-color: #333333;
+    background-color: F0E9F6;
     padding-top: 1rem;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 3rem;
-    color: #fff;
+    border-top: 6px solid #58337B;
+    border-bottom: 6px solid #58337B;
 }
 
 .icon {
