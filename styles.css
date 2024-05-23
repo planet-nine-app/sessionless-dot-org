@@ -323,7 +323,7 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-    #btn1 {
+    #btnDemo {
         display: none;
     }
 
