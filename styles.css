@@ -61,10 +61,6 @@ body {
     margin-bottom: .8rem;
 }
 
-.around {
-    justify-content: space-around;
-    align-items: center;  
-}
 .btwn {
     justify-content: space-between;
     align-items: center;
@@ -176,7 +172,7 @@ li {
 .language-container {
     display: flex;
     text-align: center;
-    background-color: F0E9F6;
+    background-color: #F0E9F6;
     padding-top: 1rem;
     padding-bottom: 3rem;
     border-top: 6px solid #58337B;
@@ -222,7 +218,12 @@ li {
     align-items: center;
     justify-content: center;
 }
-
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    display: none;
+}
 .btn-white {
     padding: 1rem 4rem;
     border: 3px solid #fff;
@@ -247,5 +248,107 @@ header {
 
 .list-item {
     font-size: 1.1rem;
+
+}
+
+@media screen and (max-width: 1400px) {
+    .btn-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .btn-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .btn-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1135px) {
+    .btn-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1065px) {
+    .btn-container {
+        flex-direction: column;
+        width: 45%;
+        gap: .5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .img-container {
+        display: none;
+    }
+
+    .btn-container {
+        flex-direction: row;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #btn1 {
+        display: none;
+    }
+
+    .img-gif {
+        display: none;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .language-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width: 530px) {
+    .btn-container {
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .logo-text {
+        font-size: 1.6rem;
+    }
+
+    .hero-container {
+        margin-top: 1.1rem;
+    }
+    header {
+        margin-left: -.7rem;
+    }
+
+    .textHeader1 {
+        font-size: 2.1rem;
+    }
+
+    .subText1 {
+        font-size: 1.1rem;
+    }
+
+    .list-item {
+        font-size: .9rem;
+    }
+
+    .textHeader2, .text-left, .heroText, .textHeader1{
+        text-align: center;
+    }
+
 
 }
