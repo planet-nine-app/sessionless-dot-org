@@ -20,18 +20,19 @@
         <h4 class="logo-subtext"> Make authentication handling easier</h4>
     </div>
 </div>
-<div class="btn" id="btn1">
+    <a href="#demo" class="btn" id="btn1">
     <img src="/assets/sparkles.png" id="black-sparkles" class="visible" alt="Sparkles">
     <img src="/assets/w-sparkles.png" id="white-sparkles" class="hidden" alt="Sparkles">
     Demo
-</div>
+    </a>
+
 </header>
-<main class="row">
-    <div class="img-container">
+<main class="row relative">
+    <section class="img-container">
             <img src="assets/HeroImage.png" class="img-hero" alt="Art work">
-    </div>
+    </section>
     <div class="content-container">
-        <div class="col padding-container">
+        <section class="col padding-container">
             <h1 class="textHeader1">Bucket list</h1>
             <p class="subText1">Do people even write bucket lists? If you are like us, you don’t. Just like you also don’t care for creating tedious onboarding processes, registration forms or password recoveries.</p>
             <h4 class="textHeader7">Dare to refuse:</h4>
@@ -43,24 +44,24 @@
             </ul>
              
                     <div class="btn-container">
-                        <a href="" class="btn" id="btn3"> 
+                        <a href="https://github.com/planet-nine-app/sessionless/blob/main/README.md" class="btn" id="btn3"> 
                             <img src="assets/w-sparkles.png" class="hidden" id="white-sparkles2" alt="Icon of an open book">
                             <img src="assets/sparkles.png" class="visible" id="black-sparkles2" alt="Icon of an open book">
                             Get resources </a> 
 
-                            <a href="" class="btn" id="btn2"> 
+                            <a href="https://github.com/planet-nine-app/sessionless/tree/main/docs" class="btn" id="btn2"> 
                                 <img src="assets/w-book-open.png" class="hidden" id="w-open-book" alt="Icon of an open book">
                                 <img src="assets/book-open.png" class="visible" id="b-open-book" alt="Icon of an open book">
                                 Learn more </a> 
-                                <a href="" class="btn" id="btn4"> 
+                                <a class="btn" id="btn4"> 
                                     <img src="assets/heart-white.png" class="hidden" id="white-hearts" alt="Icon of an open book">
                                     <img src="assets/heart.png" class="visible" id="black-hearts" alt="Icon of an open book">
                                     I love forms </a> 
                     </div>
                         
-        </div>
+                </section>
 
-        <div class="language-container">
+        <section class="language-container">
             <div class="col padding-container text-left">
                 <h3 class="textHeader3 mb-5">Supported languages</h3>
                     <img src="/assets/languages.gif" alt="this slowpoke moves" class="img-gif" />
@@ -77,13 +78,22 @@
                         <img src="/assets/rust.png" alt="Rust logo">
                     </div>
             </div>
-        </div>
+        </section>
 
-        <div class="col padding-container ">
-            <h3 class="textHeader2 mb-2">Demo</h3>
+        <section class="col padding-container ">
+            <h3 class="textHeader2 mb-2" id="demo">Demo</h3>
             <p class="heroText mb-2">Need convincing? Check out this short demo and we will walk you through it step by step.</p>
-        </div>
+        </sectio>
     </div>
 </main>
+
+<div class="dark-bg hidden" id="popup-bg"></div>
+<div class="form-popup hidden" id="popup">
+    I was lacking ideas here... 
+    <a href="" id="close-popup">
+        close popup
+    </a>
+</div>
+
 </body>
 </html>

@@ -13,6 +13,30 @@ body {
 .row {
     display: flex;
 }
+
+.dark-bg {
+z-index: 1;
+position: fixed;
+top: 0;
+left: 0;
+height: 100vh;
+width: 100vw;
+background-color: #000000c5;
+}
+
+.form-popup {
+    position: absolute;
+    height: 80vh;
+    width: 30rem;
+    left: 500;
+    top: 90;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.relative {
+    position: relative;
+}
 .hidden {
     display: none;
 }
@@ -75,7 +99,10 @@ body {
     flex-direction: column;
 }
 .content-container {
-    border: 6px solid #58337B;
+    border-top: 6px solid #F0E9F6;
+    border-bottom: 6px solid #58337B;
+    border-left: 6px solid #58337B;
+    border-right: 6px solid #58337B;
     overflow-y: auto; 
     height: 100vh;
     width: 100%;
@@ -114,7 +141,7 @@ body {
 
 .img-container {
     background-size: cover;
-    border-top: 6px solid #58337B;
+    border-top: 6px solid #F0E9F6;
     width: max-content;
     border-left: 6px solid #58337B;
     border-bottom: 6px solid #58337B;
