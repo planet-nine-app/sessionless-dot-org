@@ -8,6 +8,10 @@ const btn3 = document.getElementById('btn3');
 const sparklesWhite2 = document.getElementById('white-sparkles2');
 const sparklesBlack2 = document.getElementById('black-sparkles2');
 
+const btn4 = document.getElementById('btn4');
+const whiteHeart = document.getElementById('white-hearts');
+const blackHeart = document.getElementById('black-hearts');
+
 btn1.addEventListener('mouseover', () => {
   sparklesWhite.classList.add('visible');
   sparklesWhite.classList.remove('hidden');
@@ -50,3 +54,16 @@ btn2.addEventListener('mouseover', () => {
     bOpenBook.classList.add('visible');
   });
   
+  btn4.addEventListener('mouseover', () => {
+    whiteHeart.classList.add('visible');
+    whiteHeart.classList.remove('hidden');
+    blackHeart.classList.add('hidden');
+    blackHeart.classList.remove('visible');
+  });
+  
+  btn4.addEventListener('mouseout', () => {
+      whiteHeart.classList.remove('visible');
+      whiteHeart.classList.add('hidden');
+      blackHeart.classList.remove('hidden');
+      blackHeart.classList.add('visible');
+  });
