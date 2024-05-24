@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sessionless</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Limelight&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="row btwn">
+<div class="row">
+    <img class="logo-img" src="assets/Icon.gif" alt="Sessionless logo which is two circles connected by a line">
+
+    <div class="col logo-text-container">
+        <h2 class="logo-text">Sessionless</h2>
+        <h4 class="logo-subtext"> Make authentication handling easier</h4>
+    </div>
+</div>
+    <a href="#demo" class="btn" id="btnDemo">
+    <img src="/assets/sparkles.png" id="black-sparkles" class="visible" alt="Sparkles">
+    <img src="/assets/w-sparkles.png" id="white-sparkles" class="hidden" alt="Sparkles">
+    Demo
+    </a>
+
+</header>
+<main class="row relative">
+    <section class="img-container">
+            <img src="assets/HeroImage.png" class="img-hero" alt="Art work">
+    </section>
+    <div class="content-container">
+        <section class="col padding-container">
+            <h1 class="textHeader1">Bucket list</h1>
+            <p class="subText1">Do people even write bucket lists? If you are like us, you don’t. Just like you also don’t care for creating tedious onboarding processes, registration forms or password recoveries.</p>
+            <h4 class="textHeader7">Dare to refuse:</h4>
+            <ul class="list">
+                <li class="list-item">Registration forms</li>
+                <li class="list-item">Password managers</li>
+                <li class="list-item">Password recoveries</li>
+                <li class="list-item">CAPTCHA or similar authenticators</li>
+            </ul>
+             
+                    <div class="btn-container">
+                        <a href="https://github.com/planet-nine-app/sessionless/blob/main/README.md" class="btn" id="btnGetResources"> 
+                            <img src="assets/w-sparkles.png" class="hidden" id="white-sparkles2" alt="Icon of an open book">
+                            <img src="assets/sparkles.png" class="visible" id="black-sparkles2" alt="Icon of an open book">
+                            Get resources </a> 
+
+                            <a href="https://github.com/planet-nine-app/sessionless/tree/main/docs" class="btn" id="btnLearnMore"> 
+                                <img src="assets/w-book-open.png" class="hidden" id="w-open-book" alt="Icon of an open book">
+                                <img src="assets/book-open.png" class="visible" id="b-open-book" alt="Icon of an open book">
+                                Learn more </a> 
+                                <a class="btn" id="btnLoveForms"> 
+                                    <img src="assets/heart-white.png" class="hidden" id="white-hearts" alt="Icon of an open book">
+                                    <img src="assets/heart.png" class="visible" id="black-hearts" alt="Icon of an open book">
+                                    I love forms </a> 
+                    </div>
+                        
+                </section>
+
+        <section class="language-container">
+            <div class="col padding-container text-left">
+                <h3 class="textHeader3 mb-5">Supported languages</h3>
+                    <img src="/assets/languages.gif" alt="this slowpoke moves" class="img-gif" />
+
+                    <div class="logo-container">
+                        <img src="/assets/bun.png" alt="Bun logo">
+                        <img src="/assets/dino.png" alt="Dino logo">
+                        <img src="/assets/java.png" alt="Java logo">
+                        <img src="/assets/js.png" alt="Javascript logo">
+                        <img src="/assets/kotlin.png" alt="Kotlin logo">
+                        <img src="/assets/objectivec.png" alt="Objective C logo">
+                        <img src="/assets/swift.png" alt="Swift logo">
+                        <img src="/assets/python.png" alt="Python logo">
+                        <img src="/assets/rust.png" alt="Rust logo">
+                    </div>
+            </div>
+        </section>
+
+        <section class="col padding-container ">
+            <h3 class="textHeader2 mb-2" id="demo">Demo</h3>
+            <p class="heroText mb-2">Need convincing? Check out this short demo and we will walk you through it step by step.</p>
+        </sectio>
+    </div>
+</main>
+
+<div class="dark-bg hidden" id="popup-bg"></div>
+<div class="form-popup hidden" id="popup">
+    I was lacking ideas here... 
+    <a href="" id="close-popup">
+        close popup
+    </a>
+</div>
+
+</body>
+</html>
