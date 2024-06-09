@@ -3,11 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sessionless</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Limelight&display=swap" rel="stylesheet">
-    <script src="index.js" defer></script>
+    <script src="./dist/bundle.js" defer></script>
     <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -28,9 +28,14 @@
 
 </header>
 <main class="row relative">
+    <div class="hero-container">
     <section class="img-container">
-            <img src="assets/HeroImage.png" class="img-hero" alt="Art work">
+            <img src="assets/hero.png" class="img-hero" alt="Monsters on the wall. Surrounding the biggest monster of them all: registration forms.">
+            <button class="btn" id="btnSessionless">⚡️Register with sessionless⚡️</button>
+            <img src="assets/form.jpg" class="img-form" id="imgForm" alt="You know, if you're hearing this, you might be wondering why a form is an image, and not a collection of views. Perhaps this website's author has a trick up their sleeve...">
+            <canvas height="400" width="400" id="canvas" class="img-form"></canvas>
     </section>
+    </div>
     <div class="content-container">
         <section class="col padding-container">
             <h1 class="textHeader1">Bucket list</h1>
@@ -82,17 +87,32 @@
 
         <section class="col padding-container ">
             <h3 class="textHeader2 mb-2" id="demo">Demo</h3>
-            <p class="heroText mb-2">Need convincing? Check out this short demo and we will walk you through it step by step.</p>
+            <p class="heroText mb-2" id="heroText">Need convincing? Just give us aaaalllll this information, and we'll show you what we can do.</p>
         </sectio>
     </div>
 </main>
 
 <div class="dark-bg hidden" id="popup-bg"></div>
 <div class="form-popup hidden" id="popup">
-    I was lacking ideas here... 
-    <a href="" id="close-popup">
-        close popup
-    </a>
+  <h3>Just some standard form stuff for you:</h3>
+  <form class="trap">
+      <label for="fname" class="trap">First name:</label><br>
+      <input type="text" id="fname" name="fname" class="trap"><br>
+      <label for="lname" class="trap">Last name:</label><br>
+      <input type="text" id="lname" name="lname" class="trap"><br>
+      <label for="dob" class="trap">Date of birth:</label><br>
+      <input type="text" id="dob" name="dob" class="trap"><br>
+      <label for="email" class="trap">Email:</label><br>
+      <input type="text" id="email" name="email" class="trap"><br>
+      <label for="brn" class="trap">Bank Routing Number:</label><br>
+      <input type="text" id="brn" name="brn" class="trap"><br>
+      <label for="crypto" class="trap">Do you own crypto?</label><br>
+      <input type="text" id="crypto" name="crypto" class="trap"><br>
+      <label for="blood" class="trap">Bloodtype:</label><br>
+      <input type="text" id="blood" name="blood" class="trap"><br>
+      <label for="hotel" class="trap">What do you think of the song Hotel California?</label><br>
+      <input type="text" id="hotel" name="hotel" class="trap"><br>
+  </form>
 </div>
 
 </body>

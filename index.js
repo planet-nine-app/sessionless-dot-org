@@ -12,7 +12,10 @@ const whiteHeart = document.getElementById("white-hearts");
 const blackHeart = document.getElementById("black-hearts");
 const popupBg = document.getElementById("popup-bg");
 const popup = document.getElementById("popup");
-const btnClosePopup = document.getElementById("close-popup");
+
+const balloons = () => {
+  window.alert("put balloons here");
+};
 
 btnDemo.addEventListener("mouseover", () => {
   sparklesWhite.classList.add("visible");
@@ -26,6 +29,15 @@ btnDemo.addEventListener("mouseout", () => {
   sparklesWhite.classList.add("hidden");
   sparklesBlack.classList.remove("hidden");
   sparklesBlack.classList.add("visible");
+});
+
+btnDemo.addEventListener("onClick", () => {
+  const uuid = window.localStorage.getItem("uuid");
+  if(!uuid) {
+    window.alert("Ah, you have yet to register with us!");
+    return;
+  }
+  balloons();
 });
 
 btnGetResources.addEventListener("mouseover", () => {
@@ -77,9 +89,3 @@ btnLoveForms.addEventListener("click", () => {
   popup.classList.remove("hidden");
 });
 
-btnClosePopup.addEventListener("click", () => {
-  popupBg.classList.remove("visible");
-  popupBg.classList.add("hidden");
-  popup.classList.remove("visible");
-  popup.classList.add("hidden");
-});
