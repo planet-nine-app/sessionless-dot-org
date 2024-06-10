@@ -58,6 +58,13 @@ btnDemo.addEventListener("click", () => {
   balloons();
 });
 
+/**
+ * So you probably don't want to do this in production (I mean, I've seen worse that's for sure).
+ * Storing sensitive things in localStorage makes you vulnerable to XSS and man-in-the-browser attacks.
+ * This is offered here as a quick example of how this could work. Check the Sessionless
+ * repo for more examples that are closer to what you'll probably want.
+ */
+
 const saveKeys = (keys) => {
   window.localStorage.setItem("keys", JSON.stringify(keys));
 };
