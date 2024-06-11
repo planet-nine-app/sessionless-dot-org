@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Limelight&display=swap" rel="stylesheet">
-    <script src="./dist/bundle.js" defer></script>
+    <script src="./src/index.js" defer></script>
     <script src="https://unpkg.com/htmx.org@1.9.12" integrity="sha384-ujb1lZYygJmzgSwoxRggbCHcjc0rB2XoQrxeTUQyRjrOnlCoYta87iKBWq3EsdM2" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -28,14 +28,11 @@
 
 </header>
 <main class="row relative">
-    <div class="hero-container">
     <section class="img-container">
             <img src="assets/hero.png" class="img-hero" alt="Monsters on the wall. Surrounding the biggest monster of them all: registration forms.">
-            <button class="btn" id="btnSessionless">⚡️Register with sessionless⚡️</button>
-            <img src="assets/form.jpg" class="img-form" id="imgForm" alt="You know, if you're hearing this, you might be wondering why a form is an image, and not a collection of views. Perhaps this website's author has a trick up their sleeve...">
-            <canvas height="400" width="400" id="canvas" class="img-form"></canvas>
+            <img src="assets/form.jpg" class="img-form" alt="You know, if you're hearing this, you might be wondering why a form is an image, and not a collection of views. Perhaps this website's author has a trick up their sleeve...">
+            <canvas id="canvas" class="img-form"></canvas>
     </section>
-    </div>
     <div class="content-container">
         <section class="col padding-container">
             <h1 class="textHeader1">Bucket list</h1>
