@@ -17,58 +17,95 @@
 
     <div class="col logo-text-container">
         <h2 class="logo-text">Sessionless</h2>
-        <h4 class="logo-subtext"> Make authentication handling easier</h4>
+        <h4 class="logo-subtext"> 
+        <span class="en">Make authentication handling easier</span>
+        <span class="es hidden">Facilite el manejo de la autenticación</span>
+    </h4>
     </div>
 </div>
+<div class="header-subcontainer">
     <a href="#demo" class="btn" id="btnDemo">
-    <img src="/assets/sparkles.png" id="black-sparkles" class="visible" alt="Sparkles">
-    <img src="/assets/w-sparkles.png" id="white-sparkles" class="hidden" alt="Sparkles">
-    Demo
-    </a>
+        <img src="/assets/sparkles.png" id="black-sparkles" class="visible" alt="Sparkles">
+        <img src="/assets/w-sparkles.png" id="white-sparkles" class="hidden" alt="Sparkles">
+        Demo
+        </a>
+    
+     <div class="switch">
+            <span class="active" id="en-language-toggle">EN</span>
+            <span id="es-language-toggle">ES</span>
+     </div>
+</div>
+
 
 </header>
-<main class="row relative">
-    <div class="hero-container">
+<main class="row">
     <section class="img-container">
             <img src="assets/hero.png" class="img-hero" alt="Monsters on the wall. Surrounding the biggest monster of them all: registration forms.">
-            <button class="btn" id="btnSessionless">⚡️Register with sessionless⚡️</button>
-            <img src="assets/form.jpg" class="img-form" id="imgForm" alt="You know, if you're hearing this, you might be wondering why a form is an image, and not a collection of views. Perhaps this website's author has a trick up their sleeve...">
-            <canvas height="400" width="400" id="canvas" class="img-form"></canvas>
     </section>
-    </div>
+
     <div class="content-container">
         <section class="col padding-container">
-            <h1 class="textHeader1">Bucket list</h1>
-            <p class="subText1">Do people even write bucket lists? If you are like us, you don’t. Just like you also don’t care for creating tedious onboarding processes, registration forms or password recoveries.</p>
-            <h4 class="textHeader7">Dare to refuse:</h4>
+            <h1 class="textHeader1">
+                <span class="en">Bucket list</span>
+                <span class="es hidden">Lista de deseos</span>
+            </h1>
+            <p class="subText1">
+                <span class="en">Do people even write bucket lists? If you are like us, you don’t. Just like you also don’t care for creating tedious onboarding processes, registration forms or password recoveries.</span>
+                <span class="es hidden">¿La gente siquiera escribe listas de deseos? Si eres como nosotros, no es así. Al igual que tampoco le importa crear tediosos procesos de incorporación, formularios de registro o recuperaciones de contraseñas.</span>
+            </p>
+            <h4 class="textHeader7">
+                <span class="en">Dare to refuse:</span>
+                <span class="es hidden">Atrévete a negarte:</span>
+            </h4>
             <ul class="list">
-                <li class="list-item">Registration forms</li>
-                <li class="list-item">Password managers</li>
-                <li class="list-item">Password recoveries</li>
-                <li class="list-item">CAPTCHA or similar authenticators</li>
+                <li class="list-item">
+                    <span class="en">Registration forms</span>
+                    <span class="es hidden">Formularios de registro</span>
+                </li>
+                <li class="list-item">
+                    <span class="en">Password managers</span>
+                    <span class="es hidden">Administradoras de contraseñas</span>
+                </li>
+                <li class="list-item">
+                    <span class="en">Password recoveries</span>
+                    <span class="es hidden">Recuperaciones de contraseña</span>
+                </li>
+                <li class="list-item">
+                    <span class="en">CAPTCHA or similar authenticators</span>
+                    <span class="es hidden">CAPTCHA o autenticadores similares</span>
+                </li>
             </ul>
              
                     <div class="btn-container">
                         <a href="https://github.com/planet-nine-app/sessionless/blob/main/README.md" class="btn" id="btnGetResources"> 
                             <img src="assets/w-sparkles.png" class="hidden" id="white-sparkles2" alt="Icon of an open book">
                             <img src="assets/sparkles.png" class="visible" id="black-sparkles2" alt="Icon of an open book">
-                            Get resources </a> 
+                            <span class="en">Get resources</span>
+                            <span class="es hidden">Obtener recursos</span>
+                        </a> 
 
                             <a href="https://github.com/planet-nine-app/sessionless/tree/main/docs" class="btn" id="btnLearnMore"> 
                                 <img src="assets/w-book-open.png" class="hidden" id="w-open-book" alt="Icon of an open book">
                                 <img src="assets/book-open.png" class="visible" id="b-open-book" alt="Icon of an open book">
-                                Learn more </a> 
+                                <span class="en">Learn more</span>
+                                <span class="es hidden">Aprende más</span>
+                   </a> 
                                 <a class="btn" id="btnLoveForms"> 
                                     <img src="assets/heart-white.png" class="hidden" id="white-hearts" alt="Icon of an open book">
                                     <img src="assets/heart.png" class="visible" id="black-hearts" alt="Icon of an open book">
-                                    I love forms </a> 
+                                    <span class="en">I love forms</span>
+                                    <span class="es hidden">Me encantan las formas</span>
+                     </a> 
                     </div>
                         
                 </section>
 
         <section class="language-container">
             <div class="col padding-container text-left">
-                <h3 class="textHeader3 mb-5">Supported languages</h3>
+                <h3 class="textHeader3 mb-5">
+                    <span class="en">Supported languages</span>
+                    <span class="es hidden">Idiomas soportados</span>
+                </h3>
                     <img src="/assets/languages.gif" alt="this slowpoke moves" class="img-gif" />
 
                     <div class="logo-container">
@@ -85,34 +122,86 @@
             </div>
         </section>
 
-        <section class="col padding-container ">
-            <h3 class="textHeader2 mb-2" id="demo">Demo</h3>
-            <p class="heroText mb-2" id="heroText">Need convincing? Just give us aaaalllll this information, and we'll show you what we can do.</p>
-        </sectio>
+        <section class="col padding-container">
+            <h3 class="textHeader2 mb-2" id="demo">
+                <span class="en">Demo</span>
+                <span class="es hidden">Demo</span>
+            </h3>
+            <p class="heroText mb-2" id="heroText">
+                <span class="en">Need convincing? Just give us aaaalllll this information, and we'll show you what we can do.</span>
+                <span class="es hidden">¿Necesitas convencerte? Simplemente danos toda esta información y te mostraremos lo que podemos hacer.</span>
+            </p>
+
+            <img src="assets/form.jpg" class="img-form" id="imgForm" alt="You know, if you're hearing this, you might be wondering why a form is an image, and not a collection of views. Perhaps this website's author has a trick up their sleeve...">
+            <a class="hidden" id="btnSessionless">⚡️
+                <span class="en">Register with Sessionless</span>
+                    <span class="es hidden">Registrar con Sessionless </span>
+                    ⚡️</a>
+
+
+        </section>
     </div>
 </main>
 
 <div class="dark-bg hidden" id="popup-bg"></div>
 <div class="form-popup hidden" id="popup">
-  <h3>Just some standard form stuff for you:</h3>
-  <form class="trap">
-      <label for="fname" class="trap">First name:</label><br>
-      <input type="text" id="fname" name="fname" class="trap"><br>
-      <label for="lname" class="trap">Last name:</label><br>
-      <input type="text" id="lname" name="lname" class="trap"><br>
-      <label for="dob" class="trap">Date of birth:</label><br>
-      <input type="text" id="dob" name="dob" class="trap"><br>
-      <label for="email" class="trap">Email:</label><br>
-      <input type="text" id="email" name="email" class="trap"><br>
-      <label for="brn" class="trap">Bank Routing Number:</label><br>
-      <input type="text" id="brn" name="brn" class="trap"><br>
-      <label for="crypto" class="trap">Do you own crypto?</label><br>
-      <input type="text" id="crypto" name="crypto" class="trap"><br>
-      <label for="blood" class="trap">Bloodtype:</label><br>
-      <input type="text" id="blood" name="blood" class="trap"><br>
-      <label for="hotel" class="trap">What do you think of the song Hotel California?</label><br>
-      <input type="text" id="hotel" name="hotel" class="trap"><br>
-  </form>
+    <div class="form-container">
+        <h3 class="textHeader2 form-head">
+            <span class="en">Just some standard form stuff for you:</span>
+            <span class="es hidden">Sólo algunas cosas del formulario estándar para ti:</span>
+        </h3>
+        <form class="trap">
+            <div>
+                <label for="fname">
+                    <span class="en">First name:</span>
+                    <span class="es hidden">Nombre de pila:</span>
+                    </label><br>
+                <input type="text" id="fname" name="fname"><br>
+            </div>
+            <div class="">
+                <label for="lname">
+                    <span class="en">Last name:</span>
+                    <span class="es hidden">Apellido:</span>
+                </label><br>
+
+                <input type="text" id="lname" name="lname"><br>
+            </div>
+            <div>
+                <label for="dob">
+                    <span class="en">Date of birth:</span>
+                    <span class="es hidden">Fecha de nacimiento:</span>
+                    </label><br>
+                <input type="text" id="dob" name="dob"><br>
+            </div>
+            <div>
+                <label for="email">
+                    <span class="en">Email:</span>
+                    <span class="es hidden">Correo electrónico:</span>
+                    </label><br>
+                <input type="text" id="email" name="email"><br>
+            </div>
+            <div>
+                <label for="brn">
+                    <span class="en">Bank Routing Number:</span>
+                    <span class="es hidden">Número de ruta bancaria:</span>
+                    </label><br>
+                <input type="text" id="brn" name="brn"><br>
+            </div>
+            <div>
+                <label for="blood">
+                    <span class="en">Blood Type:</span>
+                    <span class="es hidden">Tipo de sangre:</span>
+                    </label><br>
+                <input type="text" id="blood" name="blood"><br>
+            </div>
+        </form>
+        <a class="btn" id="btnForm">
+            <span class="en">I hate forms</span>
+            <span class="es hidden">Odio las formas</span>
+        </a>
+
+    </div>
+
 </div>
 
 </body>

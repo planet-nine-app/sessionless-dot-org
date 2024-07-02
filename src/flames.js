@@ -9,9 +9,17 @@ export const setAflame = (elem) => {
   let rgbTweens = 18;  // obcs all these magic numbers are bad. Trying to go fast here. The reusable element will have
                        // these cleaned up
 
-  const canvas = document.getElementById('canvas');
+  let canvas = document.createElement('canvas');
+  canvas.id = "balloonCanvas";
+  canvas.width = window.screen.width;
+  canvas.height = document.body.scrollHeight;
+  canvas.style.zIndex = 8;
+  canvas.style.position = "absolute";
+  canvas.style.top = 0;
+  canvas.style.left = 0;
+  document.body.appendChild(canvas);
   let context = canvas.getContext('2d');
-  const viewport = {width: 400, height: 500}; // this should be set based on the canvs.
+  const viewport = {width: window.screen.width, height: document.body.scrollHeight}; // this should be set based on the canvs.
 
   const physicsComponent = {
     name: "physics",
