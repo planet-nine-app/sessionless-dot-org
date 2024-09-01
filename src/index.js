@@ -123,17 +123,19 @@ btnSessionless.addEventListener("click", async () => {
   const keys = await sessionless.generateKeys(saveKeys, getKeys);
   const payload = {
     timestamp: new Date().getTime() + '',
-    pubKey: keys.pubKey
+    pubKey: keys.pubKey,
+    hash: keys.pubKey // this would be your state hash, here I just reuse the pubKey for simplicity
   };
-  payload.signature = await sessionless.sign(JSON.stringify(payload));
+  const message = payload.timestamp + payload.pubKey + payload.hash;
+  payload.signature = await sessionless.sign(message);
   const options = {
-    method: 'put',
+    method: 'post',
     body: JSON.stringify(payload)
   };
-  const response = await window.fetch('https://thirsty-gnu-80.deno.dev/user/create', options);
+  const response = await window.fetch('https://dev.continuebee.allyabase.com/user/create', options);
   const uuidObj = await response.json();
-  window.localStorage.setItem("uuid", uuidObj.uuid);
-  heroText.innerHTML += `\nNow you have a unique id: ${uuidObj.uuid}, and keys: \nprivateKey: ${keys.privateKey}\npubKey: ${keys.pubKey}`;
+  window.localStorage.setItem("uuid", uuidObj.userUUID);
+  heroText.innerHTML += `\nNow you have a unique id: ${uuidObj.userUUID}, and keys: \nprivateKey: ${keys.privateKey}\npubKey: ${keys.pubKey}`;
   btnSessionless.innerText = "Start Over";
   window.alert("Aww yeah! Now you're registered. Try that demo again.");
 });
